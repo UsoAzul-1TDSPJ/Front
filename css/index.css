@@ -5,6 +5,7 @@
     text-decoration: none;
     list-style: none;
     font-family: sans-serif;
+
 }
 
 main{
@@ -16,6 +17,38 @@ h2{
     padding: 15px;
 }
 
+section p{
+    margin-bottom: 15px;
+}
+
+section{
+    color:#FAF9F6;;
+}
+
+section h3{
+    margin-bottom: 15px;
+}
+
+
+.regioes{
+    border: 2px white solid;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+
 .imagem{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    background-color: rgba(173, 216, 230, 0.421);
+    padding: 40px;
+    border-radius: 40px;
+}
+
+.imagem img{
+    width: 500px;
+
 }
