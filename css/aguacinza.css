@@ -1,0 +1,21 @@
+main{
+    padding: 90px;
+}
+
+section p{
+    margin-bottom: 15px;
+}
+
+.imagem{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    background-color: rgba(173, 216, 230, 0.421);
+    padding: 40px;
+    border-radius: 40px;
+}
+
+.imagem img{
+    width: 500px;
+}

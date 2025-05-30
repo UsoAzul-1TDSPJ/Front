@@ -14,9 +14,6 @@ body{
     flex-direction: column;
 }
 
-main{
-    flex: 1;
-}
 
 footer {
     background-color: white;
