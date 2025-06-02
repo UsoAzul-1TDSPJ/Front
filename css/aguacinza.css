@@ -2,6 +2,14 @@ main{
     padding: 90px;
 }
 
+h2{
+    padding: 10px;
+}
+
+h3{
+    padding: 15px;
+}
+
 section p{
     margin-bottom: 15px;
 }
