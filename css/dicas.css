@@ -2,7 +2,16 @@ main{
     padding: 90px;
 }
 
-/* Container das dicas */
+main h2{
+    text-align: center;
+    padding: 20px;
+    
+}
+
+h3{
+    text-align: center;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -13,9 +22,9 @@ main{
     margin: 0 auto;
 }
 
-/* Estilo dos retângulos (dicas) */
+
 .dica {
-    background-color: #3498db; /* Cor inicial */
+    background-color: #3498db; 
     color: white;
     padding: 20px;
     font-size: 1.1em;
