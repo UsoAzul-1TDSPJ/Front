@@ -2,6 +2,10 @@ main{
     padding: 90px;
 }
 
+h2{
+    color: white;
+}
+
 .integrantes {
     display: flex;
     flex-direction: column;
