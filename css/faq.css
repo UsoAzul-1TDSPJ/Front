@@ -38,6 +38,7 @@ h1 {
     margin-bottom: 5px;
     transition: background-color 0.3s ease;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .accordion-btn:hover {
