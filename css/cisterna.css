@@ -1,5 +1,6 @@
 main{
     padding: 90px;
+    flex: 1;
 }
 
 h2{
@@ -8,28 +9,30 @@ h2{
     color: white;
 }
 
-p{
+section p{
     line-height: 1.6;
     color: white;
+    text-align: center;
 }
 
 ul{
     color: white;
     line-height: 1.6;
+    text-align: center;
 }
 
-.imagem{
+.imagem {
     display: flex;
     justify-content: center;
-    width: 100%;
     align-items: center;
+    max-width: 900px;   
+    margin: 0 auto;     
     background-color: rgba(173, 216, 230, 0.421);
-    padding: 40px;
-    border-radius: 40px;
+    padding: 20px;      
+    border-radius: 20px; 
 }
 
-.imagem img{
-    
+.imagem img{ 
     width: 500px;
     border-radius: 40px;
 }

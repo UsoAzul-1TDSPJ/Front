@@ -3,6 +3,7 @@ main{
 }
 
 section{
+    text-align: center;
     color:#FAF9F6;;
 }
 
@@ -21,11 +22,12 @@ section p{
 .imagem{
     display: flex;
     justify-content: center;
-    width: 100%;
     align-items: center;
+    max-width: 900px;   
+    margin: 0 auto;     
     background-color: rgba(173, 216, 230, 0.421);
-    padding: 40px;
-    border-radius: 40px;
+    padding: 20px;      
+    border-radius: 20px; 
 }
 
 .imagem img{

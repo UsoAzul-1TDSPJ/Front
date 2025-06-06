@@ -1,6 +1,7 @@
 
 main{
     padding: 90px;
+    flex: 1;
 }
 .faq-container {
     width: 70%;
