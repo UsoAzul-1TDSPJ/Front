@@ -1,127 +1,143 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: sans-serif;
 }
 
-header{
-    width: 100%;
+header {
+  width: 100%;
 }
 
-#btn-mobile{
-    display: none;
+nav {
+  width: 100%;
+  background-color: white;
+  border-radius: 100px;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  transition: top 0.3s ease;
+  z-index: 999;
 }
 
-nav{
-    width: 100%;
-    background-color: white;
-    border-radius: 100px;
-    height: 60px;   
-    position: fixed;
-    top: 0;
-    width: 100%;
-    transition: top 0.3s ease;
-    z-index: 999;
-
+#btn-mobile {
+  display: none;
 }
 
-header nav ul li a{
-    color: black;   
+header nav ul li a {
+  color: black;
 }
 
-nav ul{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 20px;
-
+nav ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 20px;
 }
 
-nav ul li{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: 60px;
-    line-height: 40px;
-    border-radius: 5px;
-    padding: 0; 
+nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 60px;
+  line-height: 40px;
+  border-radius: 5px;
 }
 
-.naveg{
-    color: black;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 15px;
-    
-    width: 100%; 
-    height: 100%; 
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    padding: 0; 
-    box-sizing: border-box; 
+.naveg {
+  color: black;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 15px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#btn-mobile {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+  position: relative;
+  z-index: 1001;
+}
+
+#hamburger {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: black;
+  position: relative;
+  transition: 0.3s;
+}
+
+#hamburger::before,
+#hamburger::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background: black;
+  transition: 0.3s;
+}
+
+#hamburger::before {
+  top: -8px;
+}
+
+#hamburger::after {
+  top: 8px;
+}
+
+#nav.active #hamburger {
+  background: transparent;
+}
+
+#nav.active #hamburger::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+#nav.active #hamburger::after {
+  transform: rotate(-45deg);
+  top: 0;
 }
 
 @media (max-width: 600px) {
-    #btn-mobile {
-        display: block;
-    }
+  #btn-mobile {
+    display: block;
+  }
 
-    #menu{
-        display: block;
-        position: absolute;
-        
-        width: 100%;
-        top: 70px;
-        right: 0;
-        background-color: white;
-        height: 0px;
-        transition: .6s;
-        z-index: 1000;
-        visibility: hidden;
-        overflow-y: hidden;
-        
-    }
+  #menu {
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background: white;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: height 0.4s ease, visibility 0.4s;
+  }
 
-    #nav.active #menu{
-        visibility: visible;
-         height: calc(100vh - 70px);
-         overflow-y: auto;
-    }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+  }
 
-    #menu a{
-        padding: 1rem 0;
-        margin: 0 1rem;
-        border-bottom: 2px solid transparent;
-    }
-
-    #btn-mobile{
-        display: block;
-        padding: .5rem 1rem;
-        font-size: 1rem;
-        text-align: center;
-        background-color: none;
-        cursor: pointer;
-        
-    }
-
-    #hamburger{
-        border-top: 2px solid;
-        width: 20px;
-        display: block;
-
-    }
-    #hamburger::after, #hamburger::before{
-        display: block;
-        width: 20px;
-        height: 2px;
-        background-color: blue;
-        content: '';
-        margin-top: 5px;
-    }
+  #menu li {
+    padding: 1rem;
+    text-align: center;
+  }
 }

@@ -1,13 +1,18 @@
-let lastScrollTop = 0;
-const nav = document.querySelector("nav");
+const nav = document.getElementById("nav");
 const btnMobile = document.getElementById("btn-mobile");
 
 function toggleMenu() {
-  const nav = document.getElementById("nav");
   nav.classList.toggle("active");
+  const isActive = nav.classList.contains("active");
+  btnMobile.setAttribute("aria-expanded", isActive);
 }
 
-btnMobile.addEventListener("click", toggleMenu );
+if (btnMobile) {
+  btnMobile.addEventListener("click", toggleMenu);
+}
+
+// Ocultar nav ao rolar
+let lastScrollTop = 0;
 
 window.addEventListener("scroll", function () {
   const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
@@ -20,6 +25,3 @@ window.addEventListener("scroll", function () {
 
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
-
-
-
