@@ -1,5 +1,13 @@
 let lastScrollTop = 0;
 const nav = document.querySelector("nav");
+const btnMobile = document.getElementById("btn-mobile");
+
+function toggleMenu() {
+  const nav = document.getElementById("nav");
+  nav.classList.toggle("active");
+}
+
+btnMobile.addEventListener("click", toggleMenu );
 
 window.addEventListener("scroll", function () {
   const currentScroll = window.pageYOffset || document.documentElement.scrollTop;

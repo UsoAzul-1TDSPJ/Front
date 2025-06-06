@@ -1,5 +1,6 @@
 main{
     padding: 90px;
+    flex: 1;
 }
 
 .form-container {
@@ -25,8 +26,7 @@ label {
   font-weight: bold;
 }
 
-input,
-textarea {
+input,textarea {
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;

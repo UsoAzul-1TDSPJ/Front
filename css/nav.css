@@ -11,6 +11,10 @@ header{
     width: 100%;
 }
 
+#btn-mobile{
+    display: none;
+}
+
 nav{
     width: 100%;
     background-color: white;
@@ -61,4 +65,63 @@ nav ul li{
     justify-content: center;
     padding: 0; 
     box-sizing: border-box; 
+}
+
+@media (max-width: 600px) {
+    #btn-mobile {
+        display: block;
+    }
+
+    #menu{
+        display: block;
+        position: absolute;
+        
+        width: 100%;
+        top: 70px;
+        right: 0;
+        background-color: white;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+        
+    }
+
+    #nav.active #menu{
+        visibility: visible;
+         height: calc(100vh - 70px);
+         overflow-y: auto;
+    }
+
+    #menu a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid transparent;
+    }
+
+    #btn-mobile{
+        display: block;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        text-align: center;
+        background-color: none;
+        cursor: pointer;
+        
+    }
+
+    #hamburger{
+        border-top: 2px solid;
+        width: 20px;
+        display: block;
+
+    }
+    #hamburger::after, #hamburger::before{
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: blue;
+        content: '';
+        margin-top: 5px;
+    }
 }
