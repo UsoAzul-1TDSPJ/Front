@@ -37,6 +37,8 @@ nav ul {
   align-items: center;
   justify-content: space-around;
   margin: 0 20px;
+  align-items: center;
+  text-align: center;
 }
 
 nav ul li {
@@ -63,6 +65,7 @@ nav ul li {
 
 
 #btn-mobile {
+  background-color: black;
   display: none;
   background: none;
   border: none;
@@ -114,8 +117,29 @@ nav ul li {
 }
 
 @media (max-width: 600px) {
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  
+}
+
+button {
+  font-size: 1.2rem;
+}
+  
   #btn-mobile {
     display: block;
+    align-items: center;
+    text-align: center;
   }
 
   #menu {
@@ -125,6 +149,7 @@ nav ul li {
     right: 0;
     width: 100%;
     background: white;
+    border-radius: 20px;
     height: 0;
     overflow: hidden;
     visibility: hidden;
@@ -139,5 +164,7 @@ nav ul li {
   #menu li {
     padding: 1rem;
     text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 }

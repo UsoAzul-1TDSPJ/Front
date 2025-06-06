@@ -23,7 +23,10 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   
     status.style.color = "green";
     status.textContent = "Mensagem enviada com sucesso!";
+
+    setTimeout(() => {
+        alert("Mensagem enviada com sucesso ao nosso time de suporte!");
+    }, 500);
   
-    
     document.getElementById("contactForm").reset();
   });
