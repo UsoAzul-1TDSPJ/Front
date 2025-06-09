@@ -87,7 +87,7 @@ Infográficos e imagens explicativas sobre cisternas inteligentes, água cinza e
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/uso-azul.git
+   https://github.com/UsoAzul-1TDSPJ/Front.git
    ```
 2. Abra o projeto no navegador via `index.html`
 
